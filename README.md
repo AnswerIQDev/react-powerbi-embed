@@ -1,9 +1,20 @@
 ![](https://www.answeriq.com/hubfs/assets/Answeriq%20Logo.svg)
 # react-powerbi-embed
 
+If you need to render PowerBI reports in your React App by implementing some kind of auto-auth without having your customers log in again and again, then you might want to embed your reports using "App Owns Data" scenario as described [here](https://docs.microsoft.com/en-us/power-bi/developer/embed-sample-for-customers).
+
+This component will help you render your secured reports ("App Owns Data" scenario) in your React app with minimal effort.
+
+## Prerequisites:
+ * PowerBi Pro License
+ * PowerBi Embed License
+ * Access Token generated from Azure AD
+ * Securely published PowerBi reports
+ * Dedicated capacity assigned to the workspace holding your reports
+
 ## Getting started
 
-Install
+To install, run the following command in the root of your React app:
 
 ```bash
 npm install react-powerbi-embed
@@ -93,11 +104,9 @@ return (
 
 ### How this component actually works?
 
-If you need to render PowerBI reports in your React App by implement some kind of auto-auth without having your customers log in again and again, then you might want to embed your reports using "App Owns Data" scenario as described [here](https://docs.microsoft.com/en-us/power-bi/developer/embed-sample-for-customers).
+Implementing "App Owns Data" scenario can get very complex - at one hand you need to do the configurations mentioned in your React App and Azure AD, and on the other hand you will need to generate an embed token to be able to get your reports from PowerBi. 
 
-Implementing this can get very complex - at one hand you need to do the configurations mentioned in your React App and Azure AD, and on the other hand you will need to generate an embed token to render your reports. 
-
-Generating an embed token can be very complex, as you will need to first generate an access token from AAD, process it through a standard C# code provided by Microsoft to call one of their own APIs and then pass it to your React App  - everytime the user wants to see a report or even refresh an existing one!
+Generating an embed token can be very complex, as you will need to first generate an access token from AAD, process it through a standard C# code provided by Microsoft to call one of their own APIs and then pass it to your React App  - everytime the user wants to see a report or even refresh an already rendered one!
 
 **This component removes all that hassle by doing it for you in Javascript itself.** All that you need to do at your end is publish your powerBi reports with autoAuth, then generate an access token from your AAD and finally pass it to this component.
 
