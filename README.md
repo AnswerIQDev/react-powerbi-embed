@@ -93,7 +93,7 @@ return (
 
 ### How this component actually works?
 
-If you need to render PowerBI reports in your React App by implement some kind of auto-auth without having your customers log in again and again, then you might want to embed your reports using "App Owns Data" scenario as described [here](https://docs.microsoft.com/en-us/power-bi/developer/embed-sample-for-customershttp:// "here").
+If you need to render PowerBI reports in your React App by implement some kind of auto-auth without having your customers log in again and again, then you might want to embed your reports using "App Owns Data" scenario as described [here](https://docs.microsoft.com/en-us/power-bi/developer/embed-sample-for-customers).
 
 Implementing this can get very complex - at one hand you need to do the configurations mentioned in your React App and Azure AD, and on the other hand you will need to generate an embed token to render your reports. 
 
