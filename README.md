@@ -1,4 +1,6 @@
 ![](https://www.answeriq.com/hubfs/assets/Answeriq%20Logo.svg)
+Code contributed by: Manisha Sharma (https://github.com/manishams10) |  (https://github.com/manishas-aiq)
+
 # react-powerbi-embed
 
 If you need to render PowerBI reports in your React App by implementing some kind of auto-auth without having your customers log in again and again, then you might want to embed your reports using "App Owns Data" scenario as described [here](https://docs.microsoft.com/en-us/power-bi/developer/embed-sample-for-customers).
