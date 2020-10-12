@@ -1,4 +1,5 @@
 ![](https://www.answeriq.com/hubfs/assets/Answeriq%20Logo.svg)
+
 Code contributed by: Manisha Sharma (https://github.com/manishams10) |  (https://github.com/manishas-aiq)
 
 # react-powerbi-embed
