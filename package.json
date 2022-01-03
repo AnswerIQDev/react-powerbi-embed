@@ -62,7 +62,7 @@
   },
   "homepage": "https://github.com/AnswerIQDev/react-powerbi-embed",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.3",
     "powerbi-client": "^2.7.4"
   },
   "peerDependencies": {
